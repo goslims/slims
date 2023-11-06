@@ -12,4 +12,4 @@ $kernel->boot(function($kernel){
     // $kernel->registerHookBoot(fn() => // code here);
 });
 
-$kernel->handle(Request::capture());
+$kernel->handle(Request::capture())->send();
